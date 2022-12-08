@@ -5,8 +5,8 @@ class newProviderPage{
     //SELECT RADIO 
     get platformRadio() { return $("/html/body/div[1]/div[2]/div/mat-dialog-container/app-add-new-provider/mat-tab-group/div/mat-tab-body[1]/div/app-find-provider/div[1]/mat-radio-group/mat-radio-button[2]")}
 
-    get platformDwn() { return $("/html/body/div[1]/div[2]/div/mat-dialog-container/app-add-new-provider/mat-tab-group/div/mat-tab-body[1]/div/app-find-provider/div[2]/div[1]/div[1]/mat-select/div/div[1]")}
-    get platformcerner() { return $("/html/body/div[1]/div[4]/div/div/div/mat-option[3]/span")}
+    get platformDwn() { return $("/html/body/div[1]/div[2]/div/mat-dialog-container/app-add-new-provider/mat-tab-group/div/mat-tab-body[1]/div/app-find-provider/div[2]/div[1]/div[1]/mat-select/div")}
+    get platformcerner() { return $("/html/body/div[1]/div[4]/div/div/div/mat-option[3]")}
     get platformdropdown() { return $("//mat-select[@id='mat-select-34']")}
     get platformValueOpn() { return $("/html/body/div[1]/div[4]/div/div/div/mat-option[3]")}
     get providerIdInput() { return $("/html/body/div[1]/div[2]/div/mat-dialog-container/app-add-new-provider/mat-tab-group/div/mat-tab-body[1]/div/app-find-provider/div[2]/div[1]/div[2]/input")}
@@ -29,6 +29,7 @@ class newProviderPage{
         //ElementUtil.doIsDisplayed($("//button[@class='btn btn-custom-1 btn-primary']"))
         //ElementUtil.doIsDisplayed($("/html/body/div[1]/div[2]/div/mat-dialog-container/app-add-new-provider/div/button[2]")).waitForExist({ timeout: 15000 });
         //$("/html/body/div[1]/div[2]/div/mat-dialog-container/app-add-new-provider/div/button[2]").waitForExist({ timeout: 15000 });
+        //$("//button[@class='btn btn-custom-1 btn-primary']").waitForDisplayed({ timeout: 25000 });
         ElementUtil.doClick(this.providerCancelBtn)
     }
 
